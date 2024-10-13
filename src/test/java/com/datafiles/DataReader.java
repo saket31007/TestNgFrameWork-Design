@@ -28,5 +28,5 @@ public class DataReader {
 //	        );
 //	 return data;
 //	}
-	
+	//the above method I have moved it to base test to access it globally
 }

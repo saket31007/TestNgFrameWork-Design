@@ -11,6 +11,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.github.javafaker.Faker;
+import com.github.javafaker.Name;
+
 public class AbstractComponents {
 	
 	//This class if parent class of page classes and 
@@ -22,15 +25,7 @@ public class AbstractComponents {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//a[@data-toggle = 'tab' and @href ='#LocalConsultationTab']")
-	WebElement walkinlist;
 	
-	//actions and common mathods 
-	
-	public void goToWalkin() {
-		
-		walkinlist.click();
-	} 
 
 	public void waitforElementToAppear(By findby) {
 		
@@ -51,7 +46,15 @@ public class AbstractComponents {
 	}
 	
 		
+	public String getfirstName() {
 		
+		Faker fake = new Faker();
+		String firstName =fake.name().firstName();
+		return firstName;
+	}
 		
+	
+	
+	
 	}
 	

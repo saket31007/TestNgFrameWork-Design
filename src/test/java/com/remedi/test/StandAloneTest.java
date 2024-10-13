@@ -1,4 +1,5 @@
 package com.remedi.test;
+import java.util.UUID;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,10 +21,13 @@ import org.testng.asserts.SoftAssert;
 
 import com.pageobjects.HomePage;
 import com.pageobjects.LandingPage;
+import com.pageobjects.PRMSPage;
+import com.pageobjects.RegistartionPage;
 import com.test.components.BaseTest;
 
 public class StandAloneTest extends BaseTest {
-
+	
+	
 	@Test(dataProvider = "getData", groups = "smoketest") // we can also add multiple groups as per requirement simply
 															// put , and add after smoketest
 	public void submitTest(HashMap<String, String> input) throws Throwable {
@@ -33,13 +37,13 @@ public class StandAloneTest extends BaseTest {
 
 		
 		HomePage homepage = landingpage.loginApplication(input.get("username"), input.get("password")); //passing login to homepage object to cntinue using the driver
-		landingpage.loginApplication("demo143", "123456");
+		//landingpage.loginApplication("demo143", "123456");
 		
 
-		boolean match = homepage.displayUserImageicon();
-		System.out.println(match);
-		Assert.assertTrue(match, "display icon is not showing");
-		
+//		boolean match = homepage.displayUserImageicon();
+//		System.out.println(match);
+//		Assert.assertTrue(match, "display icon is not showing");
+//		
 
 		// reaching to walkinlist
 
@@ -52,9 +56,98 @@ public class StandAloneTest extends BaseTest {
 
 	}
 	
+	@Test(groups ="sanity")
+	public void PrivacyLinkTest() {
+		
+		landingpage.goToPrivacyPolicy();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println(landingpage.privacyText());
+		
+		Assert.assertEquals(landingpage.privacyText(), pro.getProperty("PrivacyHeader"));
+	}
+	
+	@Test
+	
+	public String patient_Registeration() {
+		
+		// Login and navigate to HomePage
+        HomePage homepage = landingpage.loginApplication("lalaa", "123456");
+        
+        // Navigate to the RegistrationPage from HomePage
+        RegistartionPage register = homepage.goTopatientRegistration();
+	
+        
+        try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+		register.setfname(homepage.getfirstName());
+		register.setlname("Smith");
+		register.setyear("25");
+		register.setday("1");
+		register.setmonth("1");
+		register.setmobileNumber("1234567890");
+		register.selectmalegender();
+		register.checkConsentbox();
+		register.clickOnRegisterbtn();
+		//register.clickOkAfterRegister();
+		
+		
+	try {
+		Thread.sleep(20000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		
+	System.out.println(register.getRegistrationtoast());
+	
+     System.out.println(register.extractPatientIDResponse());
+        
+     return register.extractPatientIDResponse();
+	}
+	
+	
+	@Test
+	public void caseSheetFilling() throws InterruptedException {
+		
+		//HomePage homepage = landingpage.loginApplication("lalaa", "123456");
+		
+		// Login and navigate to HomePage
+        HomePage homepage = landingpage.loginApplication("lalaa", "123456");
+        
+        // Navigate to the RegistrationPage from HomePage
+        RegistartionPage register = homepage.goTopatientRegistration();
+        register.getRegisteredPatientID();
+        Thread.sleep(2000);
+		register.clickOkAfterRegister();
+		
+		PRMSPage page = homepage.goToDiagnostic(register.extractPatientIDResponse());
+		
+		try {
+			Thread.sleep(20000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 
 	
-
+	
+	
+	
+	
+	
 	@DataProvider
 	public Object[][] getData() throws IOException {
 

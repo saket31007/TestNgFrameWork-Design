@@ -38,6 +38,10 @@ public class LandingPage extends AbstractComponents {
 	WebElement loginbtn;
 	@FindBy(id = "errmsg")
 	WebElement errormsg;
+	@FindBy(linkText = "Privacy Policy")
+	WebElement privacypolicylink;
+	@FindBy(xpath = "//h4[@id ='myModalLabel']")
+	WebElement privacyHeadertext;
 	
 	public HomePage loginApplication(String name, String pass) {
 		 
@@ -59,10 +63,21 @@ public class LandingPage extends AbstractComponents {
 		
 	}
 	
+	public String privacyText() {
+		waitforWebElementToAppear(privacyHeadertext);
+		return privacyHeadertext.getText();
+		
+		
+	}
 	public void goTo() {
 		 
 		
-		driver.get("https://s3test2.remedi.co.in/RemediPRMS/pages/common/login.jsp");
+		driver.get("https://s3test6.remedi.co.in/RemediPRMS/pages/common/login.jsp");
+	}
+	
+	public void goToPrivacyPolicy() {
+		
+		privacypolicylink.click();
 	}
 	
 }

@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="com.test.components.Listeners"></listener>
 </listeners>
-  <test thread-count="5" name="errorvalidationsTest">
+  <test thread-count="10" name="errorvalidationsTest">
     <classes>
       <class name="com.remedi.test.ErrorValidationsTest"/>
     </classes>

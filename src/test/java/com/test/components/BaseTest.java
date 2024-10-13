@@ -20,6 +20,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -31,11 +32,11 @@ public class BaseTest {
 
 	public WebDriver driver;
 	public LandingPage landingpage;
-
+    public Properties pro;
 	public WebDriver initializeDriver() throws IOException {
 		// properties class
 		String path = System.getProperty("user.dir") + "\\src\\main\\java\\com\\resources\\GlobalData.properties";
-		Properties pro = new Properties();
+	    pro = new Properties(); // initialize the object for reading property file
 		FileInputStream fis = new FileInputStream(path);
 		pro.load(fis); // expected inputStream
 		String browsername =  System.getProperty("browser")!= null ? System.getProperty("browser") : pro.getProperty("browser"); //used turnary operator for mvn build for passing global parameter
@@ -99,14 +100,14 @@ public class BaseTest {
 	// run before anymethod this will take care of driver initialization and
 	// lanching the application
 	@BeforeMethod(alwaysRun = true)
-
+    
 	public LandingPage launchApplication() throws IOException {
 
 		// called the mathod initialize driver where the creation of driver is done to
 		// pass same driver in the landing page
 		initializeDriver();
 		landingpage = new LandingPage(driver);
-		landingpage.goTo();
+		landingpage.goTo(); //pro.getProperty can we used to get the file from config properties
 		// to get issue resolved we have the return the landing page object so we can
 		// use in the testcase
 		return landingpage;

@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.remedi.test.ErrorValidationsTest">
+      <class name="com.remedi.test.StandAloneTest">
         <methods>
           <include name="launchApplication"/>
-          <include name="blankusername_blankpassword"/>
-          <include name="blankUsername_validpassword"/>
           <include name="tearDown"/>
+          <include name="caseSheetFilling"/>
         </methods>
-      </class> <!-- com.remedi.test.ErrorValidationsTest -->
+      </class> <!-- com.remedi.test.StandAloneTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
