@@ -74,8 +74,7 @@ public class StandAloneTest extends BaseTest {
 	}
 	
 	@Test
-	
-	public String patient_Registeration() {
+	public void patient_Registeration() {
 		
 		// Login and navigate to HomePage
         HomePage homepage = landingpage.loginApplication("lalaa", "123456");
@@ -113,7 +112,7 @@ public class StandAloneTest extends BaseTest {
 	
      System.out.println(register.extractPatientIDResponse());
         
-     return register.extractPatientIDResponse();
+     
 	}
 	
 	
