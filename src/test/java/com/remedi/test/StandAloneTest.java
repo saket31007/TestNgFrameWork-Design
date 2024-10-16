@@ -90,11 +90,12 @@ public class StandAloneTest extends BaseTest {
 			e2.printStackTrace();
 		}
 		register.setfname(homepage.getfirstName());
-		register.setlname("Smith");
-		register.setyear("25");
-		register.setday("1");
+		register.setlname(homepage.getlastName());
+		register.setyear(homepage.getAge());
 		register.setmonth("1");
-		register.setmobileNumber("1234567890");
+		register.setday("1");
+		
+		register.setmobileNumber(homepage.getContact());
 		register.selectmalegender();
 		register.checkConsentbox();
 		register.clickOnRegisterbtn();

@@ -6,8 +6,8 @@
       <class name="com.remedi.test.StandAloneTest">
         <methods>
           <include name="launchApplication"/>
+          <include name="patient_Registeration"/>
           <include name="tearDown"/>
-          <include name="caseSheetFilling"/>
         </methods>
       </class> <!-- com.remedi.test.StandAloneTest -->
     </classes>

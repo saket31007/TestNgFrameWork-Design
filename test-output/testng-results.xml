@@ -1,25 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-15T11:42:11 IST" name="Default suite" finished-at="2024-10-15T11:42:44 IST" duration-ms="33727">
+  <suite started-at="2024-10-16T13:32:32 IST" name="Suite" finished-at="2024-10-16T13:34:18 IST" duration-ms="106506">
     <groups>
+      <group name="sanity">
+        <method signature="StandAloneTest.PrivacyLinkTest()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" name="PrivacyLinkTest" class="com.remedi.test.StandAloneTest"/>
+      </group> <!-- sanity -->
+      <group name="smoketest">
+        <method signature="StandAloneTest.submitTest(java.util.HashMap)[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" name="submitTest" class="com.remedi.test.StandAloneTest"/>
+      </group> <!-- smoketest -->
+      <group name="NegativeScenario">
+        <method signature="ErrorValidationsTest.blankusername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" name="blankusername_blankpassword" class="com.remedi.test.ErrorValidationsTest"/>
+      </group> <!-- NegativeScenario -->
     </groups>
-    <test started-at="2024-10-15T11:42:11 IST" name="Default test" finished-at="2024-10-15T11:42:44 IST" duration-ms="33727">
-      <class name="com.remedi.test.StandAloneTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.StandAloneTest@4562e04d]" started-at="2024-10-15T11:42:11 IST" name="launchApplication" finished-at="2024-10-15T11:42:16 IST" duration-ms="5340" status="PASS">
+    <test started-at="2024-10-16T13:32:32 IST" name="errorvalidationsTest" finished-at="2024-10-16T13:33:26 IST" duration-ms="53736">
+      <class name="com.remedi.test.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:32:32 IST" name="launchApplication" finished-at="2024-10-16T13:32:37 IST" duration-ms="5443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="caseSheetFilling()[pri:0, instance:com.remedi.test.StandAloneTest@4562e04d]" started-at="2024-10-15T11:42:16 IST" name="caseSheetFilling" finished-at="2024-10-15T11:42:44 IST" duration-ms="28185" status="PASS">
+        <test-method signature="blankUsername_validpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:32:37 IST" name="blankUsername_validpassword" finished-at="2024-10-16T13:32:47 IST" duration-ms="9088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankUsername_validpassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:32:47 IST" name="tearDown" finished-at="2024-10-16T13:32:47 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:32:47 IST" name="launchApplication" finished-at="2024-10-16T13:32:51 IST" duration-ms="3851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="blankusername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:32:51 IST" name="blankusername_blankpassword" finished-at="2024-10-16T13:33:00 IST" duration-ms="9620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankusername_blankpassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:00 IST" name="tearDown" finished-at="2024-10-16T13:33:00 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:00 IST" name="launchApplication" finished-at="2024-10-16T13:33:09 IST" duration-ms="9175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidUsername_validPassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:09 IST" name="invalidUsername_validPassword" finished-at="2024-10-16T13:33:11 IST" duration-ms="1762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername_validPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:11 IST" name="tearDown" finished-at="2024-10-16T13:33:11 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:11 IST" name="launchApplication" finished-at="2024-10-16T13:33:16 IST" duration-ms="4342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="validUsername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:16 IST" name="validUsername_blankpassword" finished-at="2024-10-16T13:33:17 IST" duration-ms="996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUsername_blankpassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:17 IST" name="tearDown" finished-at="2024-10-16T13:33:17 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:17 IST" name="launchApplication" finished-at="2024-10-16T13:33:24 IST" duration-ms="7250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="validUsername_invalidPassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:24 IST" name="validUsername_invalidPassword" finished-at="2024-10-16T13:33:25 IST" duration-ms="1271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUsername_invalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@2dfaea86]" started-at="2024-10-16T13:33:25 IST" name="tearDown" finished-at="2024-10-16T13:33:26 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.remedi.test.ErrorValidationsTest -->
+    </test> <!-- errorvalidationsTest -->
+    <test started-at="2024-10-16T13:32:32 IST" name="StandaloneTest" finished-at="2024-10-16T13:34:18 IST" duration-ms="106506">
+      <class name="com.remedi.test.StandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:32:32 IST" name="launchApplication" finished-at="2024-10-16T13:32:37 IST" duration-ms="5418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="PrivacyLinkTest()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:32:37 IST" name="PrivacyLinkTest" finished-at="2024-10-16T13:32:47 IST" duration-ms="9498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrivacyLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:32:47 IST" name="tearDown" finished-at="2024-10-16T13:32:47 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:32:47 IST" name="launchApplication" finished-at="2024-10-16T13:32:54 IST" duration-ms="6477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="caseSheetFilling()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:32:54 IST" name="caseSheetFilling" finished-at="2024-10-16T13:33:27 IST" duration-ms="33320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseSheetFilling -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.StandAloneTest@4562e04d]" started-at="2024-10-15T11:42:44 IST" name="tearDown" finished-at="2024-10-15T11:42:44 IST" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:33:27 IST" name="tearDown" finished-at="2024-10-16T13:33:27 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:33:27 IST" name="launchApplication" finished-at="2024-10-16T13:33:32 IST" duration-ms="4714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="patient_Registeration()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:33:32 IST" name="patient_Registeration" finished-at="2024-10-16T13:33:58 IST" duration-ms="26470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patient_Registeration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:33:58 IST" name="tearDown" finished-at="2024-10-16T13:33:59 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:33:59 IST" name="launchApplication" finished-at="2024-10-16T13:34:03 IST" duration-ms="3964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitTest(java.util.HashMap)[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:03 IST" name="submitTest" data-provider="getData" finished-at="2024-10-16T13:34:03 IST" duration-ms="399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=123456, username=demo123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:03 IST" name="tearDown" finished-at="2024-10-16T13:34:04 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:04 IST" name="launchApplication" finished-at="2024-10-16T13:34:08 IST" duration-ms="4001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitTest(java.util.HashMap)[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:08 IST" name="submitTest" data-provider="getData" finished-at="2024-10-16T13:34:08 IST" duration-ms="418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=123456, username=demo143}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:08 IST" name="tearDown" finished-at="2024-10-16T13:34:08 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:08 IST" name="launchApplication" finished-at="2024-10-16T13:34:17 IST" duration-ms="9134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitTest(java.util.HashMap)[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:17 IST" name="submitTest" data-provider="getData" finished-at="2024-10-16T13:34:18 IST" duration-ms="900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=123456, username=test2admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.StandAloneTest@3b6d844d]" started-at="2024-10-16T13:34:18 IST" name="tearDown" finished-at="2024-10-16T13:34:18 IST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.remedi.test.StandAloneTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- StandaloneTest -->
+  </suite> <!-- Suite -->
 </testng-results>

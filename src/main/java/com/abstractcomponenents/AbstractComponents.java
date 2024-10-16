@@ -53,7 +53,27 @@ public class AbstractComponents {
 		return firstName;
 	}
 		
+public String getlastName() {
+		
+		Faker fake = new Faker();
+		String lastName =fake.name().lastName();
+		return lastName;
+	}
+
+public String getAge() {
 	
+	Faker fake = new Faker();
+	String Age =fake.number().digits(2);
+	return Age;
+}
+		
+public String getContact() {
+	
+	Faker fake = new Faker();
+	String phone =fake.number().digits(10);
+	return phone;
+}
+		
 	
 	
 	}
