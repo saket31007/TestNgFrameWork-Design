@@ -9,6 +9,10 @@
       <class name="com.remedi.test.ErrorValidationsTest">
         <methods>
           <include name="launchApplication"/>
+          <include name="validUsername_blankpassword"/>
+          <include name="validUsername_invalidPassword"/>
+          <include name="blankusername_blankpassword"/>
+          <include name="invalidUsername_validPassword"/>
           <include name="blankUsername_validpassword"/>
           <include name="tearDown"/>
         </methods>
