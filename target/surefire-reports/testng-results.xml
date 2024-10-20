@@ -2,71 +2,71 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-20T19:52:19 IST" name="Suite" finished-at="2024-10-20T19:52:41 IST" duration-ms="21100">
+  <suite started-at="2024-10-20T22:38:35 IST" name="Suite" finished-at="2024-10-20T22:38:51 IST" duration-ms="16358">
     <groups>
       <group name="NegativeScenario">
         <method signature="ErrorValidationsTest.blankusername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" name="blankusername_blankpassword" class="com.remedi.test.ErrorValidationsTest"/>
       </group> <!-- NegativeScenario -->
     </groups>
-    <test started-at="2024-10-20T19:52:19 IST" name="errorvalidationsTest" finished-at="2024-10-20T19:52:41 IST" duration-ms="21100">
+    <test started-at="2024-10-20T22:38:35 IST" name="errorvalidationsTest" finished-at="2024-10-20T22:38:51 IST" duration-ms="16358">
       <class name="com.remedi.test.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:19 IST" name="launchApplication" finished-at="2024-10-20T19:52:26 IST" duration-ms="6784" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:35 IST" name="launchApplication" finished-at="2024-10-20T22:38:38 IST" duration-ms="3055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="blankUsername_validpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:26 IST" name="blankUsername_validpassword" finished-at="2024-10-20T19:52:28 IST" duration-ms="1562" status="PASS">
+        <test-method signature="blankUsername_validpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:38 IST" name="blankUsername_validpassword" finished-at="2024-10-20T22:38:39 IST" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankUsername_validpassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:28 IST" name="tearDown" finished-at="2024-10-20T19:52:28 IST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:39 IST" name="tearDown" finished-at="2024-10-20T22:38:39 IST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:28 IST" name="launchApplication" finished-at="2024-10-20T19:52:30 IST" duration-ms="1711" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:39 IST" name="launchApplication" finished-at="2024-10-20T22:38:41 IST" duration-ms="2040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="blankusername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:30 IST" name="blankusername_blankpassword" finished-at="2024-10-20T19:52:31 IST" duration-ms="910" status="PASS">
+        <test-method signature="blankusername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:41 IST" name="blankusername_blankpassword" finished-at="2024-10-20T22:38:41 IST" duration-ms="782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankusername_blankpassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:31 IST" name="tearDown" finished-at="2024-10-20T19:52:31 IST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:41 IST" name="tearDown" finished-at="2024-10-20T22:38:42 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:31 IST" name="launchApplication" finished-at="2024-10-20T19:52:33 IST" duration-ms="1941" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:42 IST" name="launchApplication" finished-at="2024-10-20T22:38:44 IST" duration-ms="2890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="invalidUsername_validPassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:33 IST" name="invalidUsername_validPassword" finished-at="2024-10-20T19:52:34 IST" duration-ms="1028" status="PASS">
+        <test-method signature="invalidUsername_validPassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:44 IST" name="invalidUsername_validPassword" finished-at="2024-10-20T22:38:45 IST" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsername_validPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:34 IST" name="tearDown" finished-at="2024-10-20T19:52:34 IST" duration-ms="72" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:45 IST" name="tearDown" finished-at="2024-10-20T22:38:45 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:34 IST" name="launchApplication" finished-at="2024-10-20T19:52:36 IST" duration-ms="1848" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:45 IST" name="launchApplication" finished-at="2024-10-20T22:38:47 IST" duration-ms="2027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="validUsername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:36 IST" name="validUsername_blankpassword" finished-at="2024-10-20T19:52:37 IST" duration-ms="889" status="PASS">
+        <test-method signature="validUsername_blankpassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:47 IST" name="validUsername_blankpassword" finished-at="2024-10-20T22:38:48 IST" duration-ms="806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUsername_blankpassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:37 IST" name="tearDown" finished-at="2024-10-20T19:52:37 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:48 IST" name="tearDown" finished-at="2024-10-20T22:38:48 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:37 IST" name="launchApplication" finished-at="2024-10-20T19:52:40 IST" duration-ms="3328" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:48 IST" name="launchApplication" finished-at="2024-10-20T22:38:50 IST" duration-ms="2097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="validUsername_invalidPassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:40 IST" name="validUsername_invalidPassword" finished-at="2024-10-20T19:52:40 IST" duration-ms="450" status="PASS">
+        <test-method signature="validUsername_invalidPassword()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:50 IST" name="validUsername_invalidPassword" finished-at="2024-10-20T22:38:51 IST" duration-ms="865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUsername_invalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T19:52:40 IST" name="tearDown" finished-at="2024-10-20T19:52:41 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.remedi.test.ErrorValidationsTest@7e057f43]" started-at="2024-10-20T22:38:51 IST" name="tearDown" finished-at="2024-10-20T22:38:51 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
