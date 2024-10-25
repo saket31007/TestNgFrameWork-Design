@@ -133,12 +133,27 @@ public class StandAloneTest extends BaseTest {
 		
 		PRMSPage page = homepage.goToDiagnostic(register.extractPatientIDResponse());
 		
+//		try {
+//			Thread.sleep(20000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		
+		
+		page.fillpatientHistory("randomtext for all the case sheet");
+		
+		page.finishConsultation();
+		
+		page.switchWindowHandling();
 		try {
 			Thread.sleep(20000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		
 	}
 
