@@ -1,6 +1,8 @@
 package com.abstractcomponenents;
 
 import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -73,8 +75,38 @@ public String getContact() {
 	String phone =fake.number().digits(10);
 	return phone;
 }
+
+//window handling utility 
+ 	public void switchWindowHandling() {
+ 		
+ 		String parent = driver.getWindowHandle();
+ 		
+ 		Set<String> AllWindow = driver.getWindowHandles();
+		
+	     System.out.println(AllWindow);
+	     
+	     Iterator<String>it =AllWindow.iterator();
+	     
+	     while(it.hasNext()) {
+	     
+	     
+	     String ChildWindow =it.next();
+	     
+	     if(!parent.equalsIgnoreCase(ChildWindow)) {
+	    	 
+	    	 driver.switchTo().window(ChildWindow);
+	    	 
+	    	 //Teststeps
+	    	 driver.quit();
+	    	
+	 
+	     }
+	     
+	     driver.switchTo().window(parent);
+}
 		
 	
+ 	}
+}
 	
-	}
 	

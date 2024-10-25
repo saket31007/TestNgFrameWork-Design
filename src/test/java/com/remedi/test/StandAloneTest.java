@@ -146,7 +146,7 @@ public class StandAloneTest extends BaseTest {
 		
 		page.finishConsultation();
 		
-		page.switchWindowHandling();
+		
 		try {
 			Thread.sleep(20000);
 		} catch (InterruptedException e) {
